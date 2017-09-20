@@ -15,5 +15,15 @@
 			<a href="./project/markdown preview/index.html">markdown online editor</a>
 		</li>
 	</ul>
+	
+	<h1>倒计时(S)：</h1>
+    <h1 id="time"></h1>
+    <script>
+      var endTime = new Date(2017, 9, 20, 21, 0, 0);
+      setInterval(function() {
+        var now = new Date();
+        document.getElementById('time').innerHTML = parseInt((endTime - now)*.001);
+      }, 1000);
+    </script>
 </body>
 </html>
