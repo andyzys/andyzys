@@ -15,22 +15,5 @@
 			<a href="./project/markdown preview/index.html">markdown online editor</a>
 		</li>
 	</ul>
-	
-	<h1>倒计时(S)：</h1>
-    <h1 id="time"></h1>
-    <script>
-      var endTime = new Date(2017, 8, 20, 21, 0);
-      var ele = document.getElementById('time');
-      setInterval(function() {
-
-        var now = new Date();
-        var delta = parseInt((endTime - now) / 1000);
-        console.log(delta);
-        var hour = parseInt(delta / 3600);
-        var minute = parseInt((delta - hour*3600) / 60);
-        var second = delta % 60;
-        ele.innerHTML = '距离发offer据说还有：' + hour + '时' +minute+ '分' +second + '秒';
-      }, 1000);
-    </script>
 </body>
 </html>
